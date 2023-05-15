@@ -1,7 +1,5 @@
 package dev.benitomiyazato.emailmicroservice.dto;
 
-import dev.benitomiyazato.emailmicroservice.enums.EmailStatus;
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
