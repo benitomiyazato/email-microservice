@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/email_microservice
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
