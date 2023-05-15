@@ -4,8 +4,20 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/email_microservice
-    username: admin
+    username: postgres
     password: admin
   jpa:
     hibernate:
       ddl-auto: update
+
+  mail:
+    password: lnnninecpfhwctgq
+    username: dev.benito.miyazato@gmail.com
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
