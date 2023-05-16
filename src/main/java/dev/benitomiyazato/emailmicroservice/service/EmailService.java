@@ -41,6 +41,7 @@ public class EmailService {
         EmailModel savedEmail = emailRepository.save(emailToSave);
         EmailResponse emailResponse = new EmailResponse();
         BeanUtils.copyProperties(savedEmail, emailResponse);
+        System.out.println(emailResponse.getEmailStatus());
         return emailResponse;
     }
 }
